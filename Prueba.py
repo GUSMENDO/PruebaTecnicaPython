@@ -9,6 +9,7 @@ import pandas as pd
 #Ejercicio 1.1
 #Obtener la información de la siguiente Api y agregar la opción para buscar un pokemon
 
+#https://pokeapi.co/api/v2/pokemon/pikachu
 
 #Ejercicio 2
 """A través de la lectura del set de datos Data.csv es necesario limpiar y estandarizar  
