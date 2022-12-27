@@ -78,7 +78,7 @@ def GetPokemonInfo():
         return("No hay informacion del pokemon solicitado")
 
 
-print(GetAllInfoPokemonFromURL(url))
+# print(GetAllInfoPokemonFromURL(url))
 # print(GetPokemonInfo())
 
 def LimpiarArchivoCVS():
@@ -92,13 +92,14 @@ def LimpiarArchivoCVS():
                 if row!=[]:
                     row[0]= row[0]
                     # row[0]=(re.sub(r"[^a-zA-Z0-9]","",(row[0].replace("\t","|").replace(" ","")))).upper()
-                    row[0]=((row[0].replace("\t","|").replace(" ","").replace('"',"").replace("_","").replace('\xe1','a').replace('\xf1',"n").replace("\xed","i").replace('\xe9',"e"))).upper().split("|")
+                    row[0]=((row[0].replace("\t","|").replace(" ","").replace('"',"").replace("_","").replace('\xe1','a').replace('\xf1',"n").replace('\xf3','o').replace('\xfa','u').replace("\xed","i").replace('\xe9',"e"))).upper().split("|")
                     _nueva_cadena=""
                     for item in row[0]:
-                        item= (re.sub(r"[^a-zA-Z0-9]","",item))
+                        item= (re.sub(r"[^a-zA-Z0-9]","",item)).encode('utf-8')
                     # _nueva_cadena = "|".join(row[0])
                     _nueva_cadena=row[0]
                     array_filas.append(_nueva_cadena)
+            print(array_filas)
         
         with open('Salida.csv', 'w') as file:
             writer = csv.writer(file, delimiter='|', quotechar='"', quoting=csv.QUOTE_NONNUMERIC)
@@ -115,7 +116,7 @@ def limpiarAcentos(cadena):
     except Exception as e:
         return('error')
 
-# print(LimpiarArchivoCVS())
+print(LimpiarArchivoCVS())
 
 def FiltrarTokens():
     """Usando la siguiente cadena y patron de token, filtra solo los tokens y texto con el simbolo de +"""
