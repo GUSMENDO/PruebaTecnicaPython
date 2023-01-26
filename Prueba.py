@@ -19,8 +19,8 @@ print(df)
 
 print('Ejercicio 1.1',"\n")
 #Obtener la información de la siguiente Api y agregar la opción para buscar un pokemon
-
-url2='https://pokeapi.co/api/v2/pokemon/pikachu'
+buscar = str(input("dime que pokemon quieres buscar :"))
+url2=f'https://pokeapi.co/api/v2/pokemon/{buscar}'
 
 respuesta1=requests.get(url2)
 
