@@ -6,11 +6,11 @@ import requests
 import pandas as pd
 """
 
-#Ejercicio 1.1
+#Ejercicio 2
 """Con base al ejercicio 1 agregar la opción para buscar un pokemon
 https://pokeapi.co/api/v2/pokemon/pikachu"""
 
-#Ejercicio 2
+#Ejercicio 3
 """A través de la lectura del set de datos Data.csv es necesario limpiar y estandarizar  
 la información en un nuevo archivo llamado Salida.csv
 aplicando las siguientes reglas de limpieza de datos"""
@@ -22,18 +22,11 @@ cambiar el separador de cada columna de un tabulador (\t) por un pipe (|)
 """
 
 #Ejercicio 4
-"""Dada una lista lista = [1,3,5,6,7,8,4,6,7,4] indicar que combinación de números e indice suman 12, omitiendo sumar el mismo número
+"""Dada una lista lista = [1,3,5,6,7,8,4,6,7,4] indicar la combinación de números e indice suman 12, omitiendo sumar el mismo número
 
-Ejemplo
+Ejemplo:
 
 El indice 2 y 4 que representan los numeros 5 + 7 = 12
 """
 
-#Ejercicio 5
-"""Usando la siguiente cadena y patron de token, filtra solo los tokens y texto con el simbolo de +
-
-text="GUSTAVO 12324 MENDOZA $#%&$%&$%"
-token="|+|^|+|!|"
-newText="GUSTAVO MENDOZA"
-"""
 
